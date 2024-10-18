@@ -38,8 +38,9 @@ xmlstarlet
 ## Why do we need these scripts?
 <small>As per my findings, the Netscaler has, like most other enterprise products, complexity due to evolution.   
 
-Netscaler is a product initially created by Sun Microsystems. Sun Microsystems was one of the few companies that worked outside the "Single core CPU" era.  
-Due to this knowledge, the Netscaler internals are designed for SMP, spawning separate packet processing engines per core, very similar to the way containers work today. 
+Netscaler is a product initially created by Sun Microsystems.  
+Sun Microsystems was one of the few companies that worked outside the "Single core CPU" era.  
+Due to this knowledge, the Netscaler internals are designed for SMP, spawning separate packet processing engines per core, very similar to the way containers work today.   
 This is why Netscaler works so well in the cloud due to the packet processing engine architecture (how it can handle such high load).
 
 The above statement is a big benefit and explains why Netscaler is capable of serving huge amounts of traffic due to several good architectural considerations.
