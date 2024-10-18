@@ -1,5 +1,5 @@
 # Netscaler
-Useful Resources for managing a Netscaler from a DevOps Security Consultant
+Useful Resources for managing a Netscaler as a DevOps Security Consultant
 
 
 ## WAF/SignatureManagement
