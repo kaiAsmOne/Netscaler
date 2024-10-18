@@ -4,7 +4,7 @@ Useful Resources for managing a Netscaler as a DevOps Security Consultant
 
 ## WAF/SignatureManagement
 
-<small>This folder currently contains to scripts that can run or *nix or macOS
+<small>This folder currently contains two scripts that can run or *nix or macOS
 
 Since i am running macOS you need to modify the shell to bash as instructed in the script if you are on a *nix based OS</small>
 
@@ -26,3 +26,9 @@ Use the adc_waf_ModifySignatures.sh script to create a new signature file based 
 The script is currently made to enable / disable based on category with a defined action.
 
 i.e ./adc_waf_ModifySignatures.sh sig-r13.1b0v139s8.xml sig-r13.1b0v139s8_customized.xml "web-cgi,web-misc" ON "log,stats"
+
+## Requirements for the scripts to work as intended
+
+curl
+xmllint
+xmlstarlet
