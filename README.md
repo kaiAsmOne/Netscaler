@@ -4,7 +4,8 @@ Useful Resources for managing a Netscaler from a DevOps Security Consultant
 
 ## WAF/SignatureManagement
 
-This folder currently contains to scripts that can run or *nix of macOS
+This folder currently contains to scripts that can run or *nix or macOS
+
 Since i am running macOS you need to modify the shell to bash as instructed in the script
 
 ### adc_waf_GetSignatures.sh
