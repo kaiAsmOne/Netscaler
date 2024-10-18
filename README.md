@@ -1,30 +1,31 @@
+Thank you for providing the text. I've reviewed it, and it appears to be well-written with only a few minor issues. Here's the text with suggested corrections and improvements:
+
 # Netscaler
 Useful Resources for managing a Netscaler as a DevOps Security Consultant
 
-
 ## Folder: WAF/SignatureManagement
 
-<small>This folder currently contains two scripts that can run on *nix or macOS
+<small>This folder currently contains two scripts that can run on *nix or macOS.
 
-Since i am running macOS you need to modify the shell to bash as instructed in the script if you are on a *nix based OS</small>
+Since I am running macOS, you need to modify the shell to bash as instructed in the script if you are on a *nix-based OS.</small>
 
 ### adc_waf_GetSignatures.sh
-<small>This script will download the latest Netscaler 13.1 Web Application Firewall Signatures when executed with no parameters  
-The script supports the parameter "release" to specify the version of signatures for the Netscaler Release you are currently running   
+<small>This script will download the latest Netscaler 13.1 Web Application Firewall Signatures when executed with no parameters.  
+The script supports the parameter "release" to specify the version of signatures for the Netscaler Release you are currently running.   
 
 ./adc_waf_GetSignatures.sh release="14.1" will download latest signatures for 14.1
 </small>
 
 ### adc_waf_ModifySignatures.sh  
 
-<small> The script is intended to be used after running the adc_waf_GetSignatures.sh script  
-The adc_waf_ModifySignatures.sh will write a new signature xml file to the folder you executed the script from  
-i.e the file sig-r13.1b0v139s8.xml will be downloaded as the latest signature as of Friday 18th of October 2024.  
+<small>This script is intended to be used after running the adc_waf_GetSignatures.sh script.  
+The adc_waf_ModifySignatures.sh will write a new signature XML file to the folder you executed the script from.  
+i.e., the file sig-r13.1b0v139s8.xml will be downloaded as the latest signature as of Friday, 18th of October 2024.  
 
-Use the adc_waf_ModifySignatures.sh script to create a new signature file based on the input file  
-The script is currently made to enable / disable based on category with a defined action.
+Use the adc_waf_ModifySignatures.sh script to create a new signature file based on the input file.  
+The script is currently made to enable/disable based on category with a defined action.
 
-i.e ./adc_waf_ModifySignatures.sh sig-r13.1b0v139s8.xml sig-r13.1b0v139s8_myplatform.xml "web-cgi,web-misc" ON "log,stats"
+i.e., ./adc_waf_ModifySignatures.sh sig-r13.1b0v139s8.xml sig-r13.1b0v139s8_myplatform.xml "web-cgi,web-misc" ON "log,stats"
 
 I am currently using these scripts to create Signature Templates for different platforms such as IIS / Apache / Tomcat / Whatever
 
@@ -33,3 +34,25 @@ I am currently using these scripts to create Signature Templates for different p
 curl
 xmllint
 xmlstarlet
+
+## Why do we need these scripts?
+<small>As per my findings, the Netscaler has, like most other enterprise products, complexity due to evolution.   
+
+Netscaler is a product initially created by Sun Microsystems. Sun Microsystems was one of the few companies that worked outside the "Single core CPU" era.  
+Due to this knowledge, the Netscaler internals are designed for SMP, spawning separate packet processing engines per core, very similar to the way containers work today. 
+This is why Netscaler works so well in the cloud due to the packet processing engine architecture (how it can handle such high load).
+
+The above statement is a big benefit and explains why Netscaler is capable of serving huge amounts of traffic due to several good architectural considerations.
+I used to be all into ASIC and Cisco, but companies now struggle with the change to a generic software-based approach.
+
+Back on track:  
+
+Netscaler GUI used to be Java Clientside:  
+
+Even though they were smart enough to implement everything as a REST API from the early days (NITRO API),  
+Signature management REST API = Nitro API = Terraform citrixadc_appfwsignatures 
+The API /nitro/v1/config/appfwsignatures seems to only support management of an entire signature database.  
+Hence, we are not able to manage or operate WAF Signatures properly.
+
+I am trying to find a good way to handle configuration of one entity / one signature, but as per my understanding, we have to
+post the entire signature database back to the Netscaler for every single small change.</small>
