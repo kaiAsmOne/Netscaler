@@ -6,7 +6,7 @@ Useful Resources for managing a Netscaler from a DevOps Security Consultant
 
 This folder currently contains to scripts that can run or *nix or macOS
 
-Since i am running macOS you need to modify the shell to bash as instructed in the script
+Since i am running macOS you need to modify the shell to bash as instructed in the script if you are on a *nix based OS
 
 ### adc_waf_GetSignatures.sh
 This script will download the latest Netscaler 13.1 Signatures when executed with no parameters
