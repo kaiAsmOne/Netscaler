@@ -2,7 +2,7 @@
 Useful Resources for managing a Netscaler as a DevOps Security Consultant
 
 
-## WAF/SignatureManagement
+## Folder: WAF/SignatureManagement
 
 <small>This folder currently contains two scripts that can run or *nix or macOS
 
