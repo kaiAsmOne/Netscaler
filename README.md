@@ -39,7 +39,7 @@ xmlstarlet
 
 Netscaler is a product initially created by Sun Microsystems.  
 Sun Microsystems was one of the few companies that worked with SMP in the "Single CPU" era.  
-(SMP = Symmetric multiprocessing back then it was mostly several physical CPU´s)  
+(SMP = Symmetric multiprocessing back then was mostly several physical CPU´s)  
 Due to Sun Microsystems knowledge, the Netscaler internals are designed for SMP, spawning separate packet processing engines per core, very similar to the way containers work today.   
 
   
