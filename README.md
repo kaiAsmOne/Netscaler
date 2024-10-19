@@ -42,18 +42,16 @@ Sun Microsystems was one of the few companies that worked with SMP in the "Singl
 (SMP = Symmetric multiprocessing back then was mostly several physical CPU´s)  
 Due to Sun Microsystems knowledge, the Netscaler internals are designed for SMP, spawning separate packet processing engines per core, very similar to the way containers work today.  
 
-Furthermore Netscaler runs on FreeBSD. The BSD Line of *nix systems are known as one of the most secure Operating Systems / The OS with the fewest CVE´s recorded. 
-
-
-  
 This is why Netscaler works so well in the cloud due to the packet processing engine architecture (how it can handle such high load with cheap hardware).  
 Todays CPU´s are multiple Cores and multiple threads but still software developers struggle to design code that scales beyond using a single core per "program" or system.  
 
 The above statement is a big benefit and explains why Netscaler is capable of serving huge amounts of traffic due to several good architectural considerations.
 I used to be all into ASIC and Cisco, but companies now struggle with the change to a generic software-based approach thus equally struggeling to scale well in the cloud
 
+Furthermore Netscaler runs on FreeBSD. The BSD Line of *nix systems are known as one of the most secure Operating Systems / The OS with the fewest CVE´s recorded. 
 
-Back on track:  
+
+Back on track regarding the scripts:  
 
 Netscaler GUI used to be Java Clientside:  
 
