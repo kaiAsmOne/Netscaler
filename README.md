@@ -58,7 +58,7 @@ Back on track regarding the scripts:
 Netscaler GUI used to be Java Clientside:  
 
 Even though they were smart enough to implement everything as a REST API from the early days (NITRO API),  
-THe WAF Signature management REST API = Nitro API = Terraform citrixadc_appfwsignatures 
+The WAF Signature management REST API = Nitro API = Terraform citrixadc_appfwsignatures 
 The API /nitro/v1/config/appfwsignatures seems to only support management of an entire signature database.  
 Hence, we are not able to manage or operate WAF Signatures properly in a DevOps Environment. 
 
