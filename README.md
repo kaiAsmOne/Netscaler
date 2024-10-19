@@ -41,6 +41,8 @@ Netscaler is a product initially created by Sun Microsystems.
 Sun Microsystems was one of the few companies that worked with SMP in the "Single CPU" era.  
 (SMP = Symmetric multiprocessing back then it was mostly several physical CPU´s)  
 Due to Sun Microsystems knowledge, the Netscaler internals are designed for SMP, spawning separate packet processing engines per core, very similar to the way containers work today.   
+
+  
 This is why Netscaler works so well in the cloud due to the packet processing engine architecture (how it can handle such high load with cheap hardware).  
 Todays CPU´s are multiple Cores and multiple threads but still software developers struggle to design code that scales beyond using a single core per "program" or system.  
 
