@@ -63,4 +63,9 @@ The API /nitro/v1/config/appfwsignatures seems to only support management of an 
 Hence, we are not able to manage or operate WAF Signatures properly in a DevOps Environment. 
 
 I am trying to find a good way to handle configuration of one entity / one signature, but as per my understanding, we have to
-post the entire signature database back to the Netscaler for every single small change.</small>
+post the entire signature database back to the Netscaler for every single small change.  
+
+The scripts in this repo aims to solve this problem allowing true blue/green deployments or true canary deployments by allowing 100% configuration by code in a DevOps Pipeline.  
+
+
+</small>
