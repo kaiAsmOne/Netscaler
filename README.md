@@ -34,7 +34,7 @@ curl
 xmllint
 xmlstarlet
 
-## Why do we need these scripts?
+## Why do we need these scripts? (And why bother using Netscaler)
 <small>As per my findings, the Netscaler has, like most other enterprise products, complexity due to evolution.   
 
 Netscaler is a product initially created by Sun Microsystems.  
