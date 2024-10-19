@@ -40,7 +40,10 @@ xmlstarlet
 Netscaler is a product initially created by Sun Microsystems.  
 Sun Microsystems was one of the few companies that worked with SMP in the "Single CPU" era.  
 (SMP = Symmetric multiprocessing back then was mostly several physical CPU´s)  
-Due to Sun Microsystems knowledge, the Netscaler internals are designed for SMP, spawning separate packet processing engines per core, very similar to the way containers work today.   
+Due to Sun Microsystems knowledge, the Netscaler internals are designed for SMP, spawning separate packet processing engines per core, very similar to the way containers work today.  
+
+Furthermore Netscaler runs on FreeBSD. The BSD Line of *nix systems are known as one of the most secure Operating Systems / The OS with the fewest CVE´s recorded. 
+
 
   
 This is why Netscaler works so well in the cloud due to the packet processing engine architecture (how it can handle such high load with cheap hardware).  
