@@ -47,7 +47,8 @@ Todays CPU´s are multiple Cores and multiple threads but still software develop
 (One of the many reasons why containers are so popular)  
 
 The above statement is a big benefit and explains why Netscaler is capable of serving huge amounts of traffic due to several good architectural considerations.
-I used to be all into ASIC and Cisco, but companies now struggle with the change to a generic software-based approach thus equally struggeling to scale well in the cloud
+I used to be all into ASIC and Cisco, but companies now struggle with the change to a generic software-based approach thus equally struggeling to scale well in the cloud.  
+These systems ususally require very large Virtual Machines or struggle to perform due to the initial ASIC based design.  
 
 Furthermore Netscaler runs on FreeBSD. The BSD Line of *nix systems are known as one of the most secure Operating Systems / The OS with the fewest CVE´s recorded. 
 
