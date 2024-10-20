@@ -55,17 +55,15 @@ Furthermore Netscaler runs on FreeBSD. The BSD Line of *nix systems are known as
 
 Back on track regarding the scripts:  
 
-Netscaler GUI used to be Java Clientside:  
+Netscaler GUI used to be Java client-side:
 
-Even though they were smart enough to implement everything as a REST API from the early days (NITRO API),  
-The WAF Signature management REST API = Nitro API = Terraform citrixadc_appfwsignatures 
+Even though they were smart enough to implement everything as a REST API from the early days (NITRO API), the WAF Signature management REST API = NITRO API = Terraform citrixadc_appfwsignatures.  
 The API /nitro/v1/config/appfwsignatures seems to only support management of an entire signature database.  
-Hence, we are not able to manage or operate WAF Signatures properly in a DevOps Environment. 
+Hence, we are not able to manage or operate WAF Signatures properly in a DevOps environment.   
 
-I am trying to find a good way to handle configuration of one entity / one signature, but as per my understanding, we have to
-post the entire signature database back to the Netscaler for every single small change.  
+I am trying to find a good way to handle configuration of one entity / one signature,  
+but as per my understanding, we have to post the entire signature database back to the Netscaler for every single small change. 
 
-The scripts in this repo aims to solve this problem allowing true blue/green deployments or true canary deployments by allowing 100% configuration by code in a DevOps Pipeline.  
-
+The scripts in this repo aim to solve this problem, allowing true blue/green deployments or true canary deployments by enabling 100% configuration by code in a DevOps pipeline.
 
 </small>
