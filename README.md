@@ -10,7 +10,7 @@ Since I am running macOS, you need to modify the shell to bash as instructed in 
 
 ### adc_waf_GetSignatures.sh
 <small>This script will download the latest Netscaler 13.1 Web Application Firewall Signatures when executed with no parameters.  
-The script supports the parameter "release" to specify the version of signatures for the Netscaler Release you are currently running.   
+The script supports the parameter "release" to specify the version of signatures of the Netscaler Release you are currently running.   
 
 ./adc_waf_GetSignatures.sh release="14.1" will download latest signatures for 14.1
 </small>
