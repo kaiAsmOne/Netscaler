@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2013-2025 Citrix Systems, Inc. All rights reserved. -->
+<AppfwSignatures date="2025/05/07 12:14:11">
+	<Signature release="14.1" build="0" version="152" schema_version="8">
+		<sig_file>
+			<file>sigs/sig-r14.1b0v152s8.xml</file>
+			<sha1>sigs/sig-r14.1b0v152s8.xml.sha1</sha1>
+			<digest>sigs/sig-r14.1b0v152s8.xml.digest</digest>
+		</sig_file>
+	</Signature>
+	<Signature release="13.1" build="0" version="152" schema_version="8">
+		<sig_file>
+			<file>sigs/sig-r13.1b0v152s8.xml</file>
+			<sha1>sigs/sig-r13.1b0v152s8.xml.sha1</sha1>
+			<digest>sigs/sig-r13.1b0v152s8.xml.digest</digest>
+		</sig_file>
+	</Signature>
+	<Signature release="13.0" build="60.9" version="152" schema_version="8">
+		<sig_file>
+			<file>sigs/sig-r13.0b60.9v152s8.xml</file>
+			<sha1>sigs/sig-r13.0b60.9v152s8.xml.sha1</sha1>
+			<digest>sigs/sig-r13.0b60.9v152s8.xml.digest</digest>
+		</sig_file>
+	</Signature>
+	<Signature release="13.0" build="0" version="152" schema_version="7">
+		<sig_file>
+			<file>sigs/sig-r13.0b0v152s7.xml</file>
+			<sha1>sigs/sig-r13.0b0v152s7.xml.sha1</sha1>
+			<digest>sigs/sig-r13.0b0v152s7.xml.digest</digest>
+		</sig_file>
+	</Signature>
+	<Signature release="12.1" build="0" version="152" schema_version="6">
+		<sig_file>
+			<file>sigs/sig-r12.1b0v152s6.xml</file>
+			<sha1>sigs/sig-r12.1b0v152s6.xml.sha1</sha1>
+			<digest>sigs/sig-r12.1b0v152s6.xml.digest</digest>
+		</sig_file>
+	</Signature>
+</AppfwSignatures>

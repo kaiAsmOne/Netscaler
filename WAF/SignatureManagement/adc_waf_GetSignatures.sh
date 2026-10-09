@@ -4,9 +4,9 @@
 
 # I am running on macOS
 
-# Script written by Kai Thorsrud Sicra A/S
+# Script written by Kai Thorsrud
 # Use this script the way you find it usable
-# Contant kai@sicra.no || kai@thorsrud.io
+# Contact:  kai@thorsrud.io
 
 # This will download the latest version of etscaler WAF Signatures
 # supported parameter: release="x.y" i.e release="14.1"

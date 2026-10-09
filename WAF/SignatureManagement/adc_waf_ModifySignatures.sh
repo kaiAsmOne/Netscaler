@@ -3,9 +3,9 @@
 #if running on a linux machine replace line 1 with #!/bin/bash
 # I am running on macOS
 
-# Script written by Kai Thorsrud Sicra A/S
+# Script written by Kai Thorsrud
 # Use this script the way you find it usable
-# Contant kai@sicra.no || kai@thorsrud.io
+# Contact:  kai@thorsrud.io
 
 # Possible values for categories / $3 = Drupal, HTTP.sys, WEB-MISC, web-activex, web-cgi, web-client, web-coldfusion, web-frontpage, web-iis, web-misc, web-msic, web-php, web-shell-shock, web-struts, web-wordpress
 
