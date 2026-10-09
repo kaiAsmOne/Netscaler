@@ -9,8 +9,8 @@
 # Contact:  kai@thorsrud.io
 
 # This will download the latest version of etscaler WAF Signatures
-# supported parameter: release="x.y" i.e release="14.1"
-# If the script is executed without any parameters it willl default to 13.1 (Current stable release as of writing)
+# supported parameter: release="x.y" i.e release="14.1" or release="15.1"
+# If the script is executed without any parameters it willl default to 14.1
 
 
 
@@ -19,7 +19,7 @@
 # 2 ./adc_waf_GetSignatures.sh release="14.1"
 
 # Define the default release version
-default_release="13.1"
+default_release="14.1"
 
 # Check if a release parameter is passed
 if [[ $1 == release=* ]]; then
